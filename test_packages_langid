@@ -1,0 +1,12 @@
+from pyspark.sql import SparkSession
+
+# Try importing your packages
+try:
+    import langid
+    import sklearn
+    print("langid and scikit-learn are installed!")
+except ImportError as e:
+    print(f"Import error: {e}")
+
+spark = SparkSession.builder.getOrCreate()
+print("Spark session started successfully.")
