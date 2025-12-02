@@ -1,0 +1,143 @@
+{
+  "cluster_4": {
+    "english": [
+      {
+        "title": "This Is What You Came For (feat. Rihanna)",
+        "artist": "Calvin Harris",
+        "album": "This Is What You Came For",
+        "af_danceability": 0.631,
+        "af_energy": 0.927,
+        "af_loudness": -2.787,
+        "af_speechiness": 0.0332,
+        "af_acousticness": 0.199,
+        "af_instrumentalness": 0.119,
+        "af_valence": 0.465,
+        "af_tempo": 123.962,
+        "language_id": 0.0,
+        "vectorized_features": [
+          0.631,
+          0.927,
+          -2.787,
+          0.0332,
+          0.199,
+          0.119,
+          0.465,
+          123.962,
+          0.0
+        ],
+        "scaled_vectorized_features": [
+          6.9219583967217,
+          7.876043128707942,
+          -1.6667321028043431,
+          0.49836716906008866,
+          1.2783862133807995,
+          13.533637945415672,
+          2.6610006486004463,
+          3.6623209596038477,
+          0.0
+        ],
+        "probability": [
+          5.501826057832016e-46,
+          5.501826057832016e-46,
+          5.501826057832016e-46,
+          5.501826057832016e-46,
+          1.0,
+          5.501826057832016e-46
+        ],
+        "gmm_predictions": 4
+      },
+      {
+        "title": "What Do You Mean?",
+        "artist": "Justin Bieber",
+        "album": "Purpose (Deluxe)",
+        "af_danceability": 0.845,
+        "af_energy": 0.567,
+        "af_loudness": -8.118,
+        "af_speechiness": 0.0956,
+        "af_acousticness": 0.59,
+        "af_instrumentalness": 0.00142,
+        "af_valence": 0.793,
+        "af_tempo": 125.02,
+        "language_id": 0.0,
+        "vectorized_features": [
+          0.845,
+          0.567,
+          -8.118,
+          0.0956,
+          0.59,
+          0.00142,
+          0.793,
+          125.02,
+          0.0
+        ],
+        "scaled_vectorized_features": [
+          9.26950054711543,
+          4.8173856029961195,
+          -4.854873057253555,
+          1.4350572699441109,
+          3.7901902808777472,
+          0.16149383094529626,
+          4.538007557720761,
+          3.69357840604115,
+          0.0
+        ],
+        "probability": [
+          5.5018260578076995e-46,
+          5.5018260578076995e-46,
+          5.5018260578076995e-46,
+          5.5018260578076995e-46,
+          1.0,
+          5.5018260578076995e-46
+        ],
+        "gmm_predictions": 4
+      }
+    ],
+    "spanish": [
+      {
+        "title": "Cuando Pase El Temblor - Remasterizado 2007",
+        "artist": "Soda Stereo",
+        "album": "Nada Personal (Remastered)",
+        "af_danceability": 0.652,
+        "af_energy": 0.607,
+        "af_loudness": -8.657,
+        "af_speechiness": 0.0368,
+        "af_acousticness": 0.0314,
+        "af_instrumentalness": 0.00285,
+        "af_valence": 0.72,
+        "af_tempo": 94.089,
+        "language_id": 1.0,
+        "vectorized_features": [
+          0.652,
+          0.607,
+          -8.657,
+          0.0368,
+          0.0314,
+          0.00285,
+          0.72,
+          94.089,
+          1.0
+        ],
+        "scaled_vectorized_features": [
+          7.1523246825080005,
+          5.157236439186322,
+          -5.177215577315105,
+          0.5524069825726284,
+          0.20171521155857838,
+          0.3241249423902073,
+          4.12025906880069,
+          2.7797560282035336,
+          2.202220868479077
+        ],
+        "probability": [
+          5.5018260578213046e-46,
+          5.5018260578213046e-46,
+          5.5018260578213046e-46,
+          5.5018260578213046e-46,
+          1.0,
+          5.5018260578213046e-46
+        ],
+        "gmm_predictions": 4
+      }
+    ]
+  }
+}

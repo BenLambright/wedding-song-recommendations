@@ -1,0 +1,278 @@
+{
+  "cluster_2": {
+    "english": [
+      {
+        "title": "Cheap Thrills",
+        "artist": "Sia",
+        "album": "This Is Acting",
+        "af_danceability": 0.628,
+        "af_energy": 0.698,
+        "af_loudness": -5.608,
+        "af_speechiness": 0.105,
+        "af_acousticness": 0.0472,
+        "af_instrumentalness": 0.00143,
+        "af_valence": 0.732,
+        "af_tempo": 89.976,
+        "language_id": 0.0,
+        "vectorized_features": [
+          0.628,
+          0.698,
+          -5.608,
+          0.105,
+          0.0472,
+          0.00143,
+          0.732,
+          89.976,
+          0.0
+        ],
+        "scaled_vectorized_features": [
+          6.889048927323657,
+          5.9303970915190325,
+          -3.3537975000096005,
+          1.5761612274490755,
+          0.30321522247021976,
+          0.16263111144491105,
+          4.188930053280702,
+          2.658241966581015,
+          0.0
+        ],
+        "probability": [
+          2.121418619977583e-31,
+          2.121418619977583e-31,
+          1.0,
+          2.121418619977583e-31,
+          2.121418619977583e-31,
+          2.121418619977583e-31
+        ],
+        "gmm_predictions": 2
+      },
+      {
+        "title": "Chillax (feat. Ky-Mani Marley)",
+        "artist": "Farruko",
+        "album": "Visionary",
+        "af_danceability": 0.827,
+        "af_energy": 0.646,
+        "af_loudness": -4.727,
+        "af_speechiness": 0.0766,
+        "af_acousticness": 0.0724,
+        "af_instrumentalness": 0.0,
+        "af_valence": 0.512,
+        "af_tempo": 92.057,
+        "language_id": 0.0,
+        "vectorized_features": [
+          0.827,
+          0.646,
+          -4.727,
+          0.0766,
+          0.0724,
+          0.0,
+          0.512,
+          92.057,
+          0.0
+        ],
+        "scaled_vectorized_features": [
+          9.072043730727172,
+          5.488591004471769,
+          -2.826925959797679,
+          1.1498471430723733,
+          0.46510131582296427,
+          0.0,
+          2.9299620044804913,
+          2.71972282294777,
+          0.0
+        ],
+        "probability": [
+          6.405284551840616e-18,
+          2.121418620002319e-31,
+          1.0,
+          2.121418620002319e-31,
+          2.121418620002319e-31,
+          2.121418620002319e-31
+        ],
+        "gmm_predictions": 2
+      },
+      {
+        "title": "Dont Let Me Down (feat. Daya)",
+        "artist": "The Chainsmokers",
+        "album": "The Chainsmokers- Japan Special Edition",
+        "af_danceability": 0.542,
+        "af_energy": 0.859,
+        "af_loudness": -5.651,
+        "af_speechiness": 0.197,
+        "af_acousticness": 0.16,
+        "af_instrumentalness": 0.00466,
+        "af_valence": 0.403,
+        "af_tempo": 159.797,
+        "language_id": 0.0,
+        "vectorized_features": [
+          0.542,
+          0.859,
+          -5.651,
+          0.197,
+          0.16,
+          0.00466,
+          0.403,
+          159.797,
+          0.0
+        ],
+        "scaled_vectorized_features": [
+          5.945644137913093,
+          7.298296707184598,
+          -3.3795131370460507,
+          2.9571786838806466,
+          1.0278482117634569,
+          0.5299727128204793,
+          2.3062005621203867,
+          4.721026624141398,
+          0.0
+        ],
+        "probability": [
+          2.121418620203762e-31,
+          2.121418620203762e-31,
+          1.0,
+          2.121418620203762e-31,
+          2.121418620203762e-31,
+          2.121418620203762e-31
+        ],
+        "gmm_predictions": 2
+      },
+      {
+        "title": "One Dance",
+        "artist": "Drake, WizKid, Kyla",
+        "album": "Views",
+        "af_danceability": 0.791,
+        "af_energy": 0.619,
+        "af_loudness": -5.886,
+        "af_speechiness": 0.0532,
+        "af_acousticness": 0.00784,
+        "af_instrumentalness": 0.00423,
+        "af_valence": 0.371,
+        "af_tempo": 103.989,
+        "language_id": 0.0,
+        "vectorized_features": [
+          0.791,
+          0.619,
+          -5.886,
+          0.0532,
+          0.00784,
+          0.00423,
+          0.371,
+          103.989,
+          0.0
+        ],
+        "scaled_vectorized_features": [
+          8.677130097950657,
+          5.259191690043383,
+          -3.5200520836406044,
+          0.7985883552408649,
+          0.050364562376409384,
+          0.48106965133704455,
+          2.123077936840356,
+          3.0722406404240377,
+          0.0
+        ],
+        "probability": [
+          2.12141862013572e-31,
+          2.12141862013572e-31,
+          1.0,
+          2.12141862013572e-31,
+          2.12141862013572e-31,
+          2.12141862013572e-31
+        ],
+        "gmm_predictions": 2
+      },
+      {
+        "title": "Papi Shampu",
+        "artist": "Papichamp",
+        "album": "Papi Shampu",
+        "af_danceability": 0.629,
+        "af_energy": 0.763,
+        "af_loudness": -5.572,
+        "af_speechiness": 0.0926,
+        "af_acousticness": 0.0831,
+        "af_instrumentalness": 0.00388,
+        "af_valence": 0.886,
+        "af_tempo": 94.009,
+        "language_id": 0.0,
+        "vectorized_features": [
+          0.629,
+          0.763,
+          -5.572,
+          0.0926,
+          0.0831,
+          0.00388,
+          0.886,
+          94.009,
+          0.0
+        ],
+        "scaled_vectorized_features": [
+          6.900018750456338,
+          6.482654700328112,
+          -3.3322681294674563,
+          1.3900240920169944,
+          0.5338386649846454,
+          0.44126483385052784,
+          5.07020768744085,
+          2.77739251618559,
+          0.0
+        ],
+        "probability": [
+          2.1214186201376494e-31,
+          2.1214186201376494e-31,
+          1.0,
+          2.1214186201376494e-31,
+          2.1214186201376494e-31,
+          2.1214186201376494e-31
+        ],
+        "gmm_predictions": 2
+      }
+    ],
+    "spanish": [
+      {
+        "title": "Te Vas - Version Cumbia",
+        "artist": "aLee DJ, Zeta Music",
+        "album": "VOL. 1",
+        "af_danceability": 0.646,
+        "af_energy": 0.784,
+        "af_loudness": -6.096,
+        "af_speechiness": 0.0342,
+        "af_acousticness": 0.128,
+        "af_instrumentalness": 0.00637,
+        "af_valence": 0.978,
+        "af_tempo": 150.165,
+        "language_id": 1.0,
+        "vectorized_features": [
+          0.646,
+          0.784,
+          -6.096,
+          0.0342,
+          0.128,
+          0.00637,
+          0.978,
+          150.165,
+          1.0
+        ],
+        "scaled_vectorized_features": [
+          7.086505743711915,
+          6.6610763893279685,
+          -3.6456400784697798,
+          0.5133782283691275,
+          0.8222785694107655,
+          0.7244476782546037,
+          5.596685235120938,
+          4.436459777181005,
+          2.202220868479077
+        ],
+        "probability": [
+          2.121418620186096e-31,
+          2.121418620186096e-31,
+          1.0,
+          2.121418620186096e-31,
+          2.121418620186096e-31,
+          2.121418620186096e-31
+        ],
+        "gmm_predictions": 2
+      }
+    ]
+  }
+}

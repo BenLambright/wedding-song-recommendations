@@ -1,0 +1,413 @@
+{
+  "cluster_1": {
+    "english": [
+      {
+        "title": "Borro Cassette",
+        "artist": "Maluma",
+        "album": "Pretty Boy, Dirty Boy",
+        "af_danceability": 0.73,
+        "af_energy": 0.701,
+        "af_loudness": -5.885,
+        "af_speechiness": 0.106,
+        "af_acousticness": 0.132,
+        "af_instrumentalness": 0.0,
+        "af_valence": 0.785,
+        "af_tempo": 175.95,
+        "language_id": 0.0,
+        "vectorized_features": [
+          0.73,
+          0.701,
+          -5.885,
+          0.106,
+          0.132,
+          0.0,
+          0.785,
+          175.95,
+          0.0
+        ],
+        "scaled_vectorized_features": [
+          8.007970886857118,
+          5.9558859042332974,
+          -3.519454045569989,
+          1.5911722867581144,
+          0.8479747747048519,
+          0.0,
+          4.492226901400753,
+          5.198249244464408,
+          0.0
+        ],
+        "probability": [
+          2.7581090709563133e-06,
+          0.9999972418909291,
+          2.210510148701072e-18,
+          2.210510148701072e-18,
+          2.210510148701072e-18,
+          2.210510148701072e-18
+        ],
+        "gmm_predictions": 1
+      },
+      {
+        "title": "Cheap Thrills Remix (feat. Nicky Jam)",
+        "artist": "Sia",
+        "album": "Cheap Thrills Remix (feat. Nicky Jam)",
+        "af_danceability": 0.534,
+        "af_energy": 0.749,
+        "af_loudness": -5.562,
+        "af_speechiness": 0.0749,
+        "af_acousticness": 0.0776,
+        "af_instrumentalness": 1.47e-06,
+        "af_valence": 0.671,
+        "af_tempo": 179.975,
+        "language_id": 0.0,
+        "vectorized_features": [
+          0.534,
+          0.749,
+          -5.562,
+          0.0749,
+          0.0776,
+          1.47e-06,
+          0.671,
+          179.975,
+          0.0
+        ],
+        "scaled_vectorized_features": [
+          5.857885552851645,
+          6.363706907661541,
+          -3.326287748761305,
+          1.1243283422470072,
+          0.4985063827052766,
+          0.00016718023344337006,
+          3.8398525488406436,
+          5.317163442867189,
+          0.0
+        ],
+        "probability": [
+          2.225665041506579e-05,
+          0.9999777433495849,
+          2.2106636732368637e-18,
+          2.2106636732368637e-18,
+          2.2106636732368637e-18,
+          2.2106636732368637e-18
+        ],
+        "gmm_predictions": 1
+      },
+      {
+        "title": "Let Me Love You",
+        "artist": "DJ Snake, Justin Bieber",
+        "album": "Encore",
+        "af_danceability": 0.476,
+        "af_energy": 0.718,
+        "af_loudness": -5.309,
+        "af_speechiness": 0.0576,
+        "af_acousticness": 0.0784,
+        "af_instrumentalness": 1.02e-05,
+        "af_valence": 0.142,
+        "af_tempo": 199.864,
+        "language_id": 0.0,
+        "vectorized_features": [
+          0.476,
+          0.718,
+          -5.309,
+          0.0576,
+          0.0784,
+          1.02e-05,
+          0.142,
+          199.864,
+          0.0
+        ],
+        "scaled_vectorized_features": [
+          5.221635811156148,
+          6.100322509614133,
+          -3.1749841168956796,
+          0.8646370162006357,
+          0.5036456237640938,
+          0.0011600261096070578,
+          0.8126066496801361,
+          5.9047620744281595,
+          0.0
+        ],
+        "probability": [
+          3.5300232393816026e-11,
+          0.9999999999646998,
+          2.2104983755245144e-18,
+          2.2104983755245144e-18,
+          2.2104983755245144e-18,
+          2.2104983755245144e-18
+        ],
+        "gmm_predictions": 1
+      },
+      {
+        "title": "Stressed Out",
+        "artist": "Twenty One Pilots",
+        "album": "Blurryface",
+        "af_danceability": 0.734,
+        "af_energy": 0.637,
+        "af_loudness": -5.677,
+        "af_speechiness": 0.141,
+        "af_acousticness": 0.0462,
+        "af_instrumentalness": 2.29e-05,
+        "af_valence": 0.648,
+        "af_tempo": 169.977,
+        "language_id": 0.0,
+        "vectorized_features": [
+          0.734,
+          0.637,
+          -5.677,
+          0.141,
+          0.0462,
+          2.29e-05,
+          0.648,
+          169.977,
+          0.0
+        ],
+        "scaled_vectorized_features": [
+          8.051850179387841,
+          5.412124566328974,
+          -3.395062126882044,
+          2.1165593625744727,
+          0.2967911711466982,
+          0.002604372344117806,
+          3.7082331619206217,
+          5.021783528424705,
+          0.0
+        ],
+        "probability": [
+          1.3303302497656222e-06,
+          0.9999986696697503,
+          2.2105030488380104e-18,
+          2.2105030488380104e-18,
+          2.2105030488380104e-18,
+          2.2105030488380104e-18
+        ],
+        "gmm_predictions": 1
+      },
+      {
+        "title": "The Greatest",
+        "artist": "Sia",
+        "album": "This Is Acting (Deluxe Version)",
+        "af_danceability": 0.639,
+        "af_energy": 0.785,
+        "af_loudness": -6.167,
+        "af_speechiness": 0.174,
+        "af_acousticness": 0.0174,
+        "af_instrumentalness": 0.00107,
+        "af_valence": 0.686,
+        "af_tempo": 191.95,
+        "language_id": 0.0,
+        "vectorized_features": [
+          0.639,
+          0.785,
+          -6.167,
+          0.174,
+          0.0174,
+          0.00107,
+          0.686,
+          191.95,
+          0.0
+        ],
+        "scaled_vectorized_features": [
+          7.009716981783148,
+          6.669572660232723,
+          -3.6881007814834534,
+          2.6119243197727537,
+          0.11177849302927592,
+          0.12168901345877958,
+          3.925691279440658,
+          5.6709516480531015,
+          0.0
+        ],
+        "probability": [
+          2.210499740748429e-18,
+          1.0,
+          2.210499740748429e-18,
+          2.210499740748429e-18,
+          2.210499740748429e-18,
+          2.210499740748429e-18
+        ],
+        "gmm_predictions": 1
+      },
+      {
+        "title": "The Greatest (feat. Kendrick Lamar)",
+        "artist": "Sia",
+        "album": "This Is Acting (Deluxe Version)",
+        "af_danceability": 0.668,
+        "af_energy": 0.725,
+        "af_loudness": -6.127,
+        "af_speechiness": 0.266,
+        "af_acousticness": 0.0102,
+        "af_instrumentalness": 0.000479,
+        "af_valence": 0.729,
+        "af_tempo": 191.944,
+        "language_id": 0.0,
+        "vectorized_features": [
+          0.668,
+          0.725,
+          -6.127,
+          0.266,
+          0.0102,
+          0.000479,
+          0.729,
+          191.944,
+          0.0
+        ],
+        "scaled_vectorized_features": [
+          7.327841852630897,
+          6.159796405947419,
+          -3.6641792586588484,
+          3.992941776204325,
+          0.06552532349992038,
+          0.05447573593154712,
+          4.171762307160699,
+          5.6707743846517555,
+          0.0
+        ],
+        "probability": [
+          2.2104979758934824e-18,
+          1.0,
+          2.2104979758934824e-18,
+          2.2104979758934824e-18,
+          2.2104979758934824e-18,
+          2.2104979758934824e-18
+        ],
+        "gmm_predictions": 1
+      },
+      {
+        "title": "Trumpets",
+        "artist": "Sak Noel & Salvi, Sean Paul",
+        "album": "Trumpets (Remixes)",
+        "af_danceability": 0.676,
+        "af_energy": 0.708,
+        "af_loudness": -6.989,
+        "af_speechiness": 0.225,
+        "af_acousticness": 0.00251,
+        "af_instrumentalness": 0.000134,
+        "af_valence": 0.435,
+        "af_tempo": 100.025,
+        "language_id": 0.0,
+        "vectorized_features": [
+          0.676,
+          0.708,
+          -6.989,
+          0.225,
+          0.00251,
+          0.000134,
+          0.435,
+          100.025,
+          0.0
+        ],
+        "scaled_vectorized_features": [
+          7.415600437692345,
+          6.015359800566583,
+          -4.179688075529083,
+          3.3774883445337336,
+          0.016124368822039232,
+          0.015239558694837818,
+          2.489323187400417,
+          2.955128619934939,
+          0.0
+        ],
+        "probability": [
+          2.2104997449353574e-18,
+          1.0,
+          2.2104997449353574e-18,
+          2.2104997449353574e-18,
+          2.2104997449353574e-18,
+          2.2104997449353574e-18
+        ],
+        "gmm_predictions": 1
+      }
+    ],
+    "spanish": [
+      {
+        "title": "Que Raro",
+        "artist": "Feid, J Balvin",
+        "album": "Que Raro",
+        "af_danceability": 0.743,
+        "af_energy": 0.771,
+        "af_loudness": -7.648,
+        "af_speechiness": 0.319,
+        "af_acousticness": 0.396,
+        "af_instrumentalness": 0.000828,
+        "af_valence": 0.775,
+        "af_tempo": 171.935,
+        "language_id": 1.0,
+        "vectorized_features": [
+          0.743,
+          0.771,
+          -7.648,
+          0.319,
+          0.396,
+          0.000828,
+          0.775,
+          171.935,
+          1.0
+        ],
+        "scaled_vectorized_features": [
+          8.15057858758197,
+          6.550624867566152,
+          -4.573795164064448,
+          4.788527919583382,
+          2.5439243241145557,
+          0.09416682536810232,
+          4.435001081000744,
+          5.079630485063871,
+          2.202220868479077
+        ],
+        "probability": [
+          2.2104995212813346e-18,
+          1.0,
+          2.2104995212813346e-18,
+          2.2104995212813346e-18,
+          2.2104995212813346e-18,
+          2.2104995212813346e-18
+        ],
+        "gmm_predictions": 1
+      },
+      {
+        "title": "Todo Comenzó Bailando",
+        "artist": "Marama",
+        "album": "Todo Comenzó Bailando",
+        "af_danceability": 0.39,
+        "af_energy": 0.641,
+        "af_loudness": -5.807,
+        "af_speechiness": 0.0663,
+        "af_acousticness": 0.0738,
+        "af_instrumentalness": 0.0,
+        "af_valence": 0.931,
+        "af_tempo": 48.754,
+        "language_id": 1.0,
+        "vectorized_features": [
+          0.39,
+          0.641,
+          -5.807,
+          0.0663,
+          0.0738,
+          0.0,
+          0.931,
+          48.754,
+          1.0
+        ],
+        "scaled_vectorized_features": [
+          4.278231021745583,
+          5.446109649947994,
+          -3.47280707606201,
+          0.9952332321892734,
+          0.47409498767589453,
+          0.0,
+          5.327723879240893,
+          1.4403833115351963,
+          2.202220868479077
+        ],
+        "probability": [
+          2.2104994738956556e-18,
+          0.9999999999389407,
+          2.2104994738956556e-18,
+          2.2104994738956556e-18,
+          2.2104994738956556e-18,
+          6.105936443379927e-11
+        ],
+        "gmm_predictions": 1
+      }
+    ]
+  }
+}
