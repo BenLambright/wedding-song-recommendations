@@ -2,15 +2,24 @@
 Preprocessing module for the cloud
 """
 
+import sys
 from pyspark.sql import SparkSession, functions as F
 from pyspark.sql.types import FloatType
 import datetime
+
+# Check arguments
+if len(sys.argv) != 3:
+    print("Usage: preprocessing.py <input_file> <output_file>", file=sys.stderr)
+    sys.exit(-1)
+
+file_path = sys.argv[1]
+output_path = sys.argv[2]
 
 spark = SparkSession.builder.appName("Preprocessing").getOrCreate()
 sc = spark.sparkContext
 
 # load the dataset
-df = spark.read.csv("subset.csv", header=True, inferSchema=True)
+df = spark.read.csv(file_path, header=True, inferSchema=True)
 
 # remove the following columns: urls, track_id, data, available markets, id, and date
 # also remove artist, album, region, and name because they are strings not worth embedding for now
@@ -18,48 +27,19 @@ df = spark.read.csv("subset.csv", header=True, inferSchema=True)
 # finally, remove index because dataframes already have an index
 columns_to_remove = [
     "urls", "track_id", "data", "available_markets", "id", "url", "date",
-    "artist", "album", "region", "name", "chart"
+    "region", "name", "chart",
+    "rank", "streams", "trend", "popularity", "duration_ms", "release_date", "af_time_signature", "af_key", "af_mode", "af_liveness"
 ]
 df = df.drop(*columns_to_remove)
 
 # remove duplicates by checking to see if any titles match
 df = df.dropDuplicates(["title"])
-df = df.drop("title")
-
-# rename the unnamed column to index
-df = df.withColumnRenamed("Unnamed: 0", "index_col")
-
-# convert the date columns into a float representing the year
-def date_to_year(date):
-    try:
-        return float(date.year)
-    except:
-        return None
-    
-date_to_year_udf = F.udf(date_to_year, FloatType())
-df = df.withColumn("date", date_to_year_udf(F.col("release_date")))
-df = df.drop("release_date")
-
-# convert the trend column into a scale from 0-2
-def trend_to_scale(trend):
-    if trend == "MOVE_UP":
-        return 2.0
-    elif trend == "MOVE_DOWN":
-        return 0.0
-    else:
-        return 1.0
-
-trend_to_scale_udf = F.udf(trend_to_scale, FloatType())
-df = df.withColumn("trend", trend_to_scale_udf(F.col("trend")))
 
 # remove explicit content, and then remove the explicit column
 df = df.filter(F.col("explicit") == False)
 df = df.drop("explicit")
 
-# convert the rank column to a float
-df = df.withColumn("rank", F.col("rank").cast(FloatType()))
-
-df.show(5)
+df.coalesce(5).write.csv(output_path, header=True, mode="overwrite")
 
 """
 Next steps:
@@ -67,10 +47,4 @@ Next steps:
 2. save the preprocessed dataframe to a parquet or csv - make sure we remove the index column for that as well
 3. save just the index column, title, artist to a separate csv for reference and creating the language detection
 4. test this on the small data before we do it on the big data
-"""
-
-"""
-Changes I think we should make:
-1. I think we should consider saving the title and artist, and just put the numpy array in a separate section
-2. To evaluate our results, we should consider a way to visualize the clusters we get, maybe by showing the song titles or something, I think this might help ensure the clusters align with our intution
 """
