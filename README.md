@@ -41,65 +41,34 @@ This repository contains code separate code versions that run on Google Cloud.
 - add_file: Contains code to run... 
 ---
 
-## Dataset Explanation
+## Dataset Exploration:
 
-Details of the dataset are available on `Dataset_attributes.pdf`.
-The dataset originates from the Home Mortgage Disclosure Act (HMDA) database and includes:
+Details of the dataset are available on `Spotify Charts (All Audio Data) Data Set Dictionary.pdf`. It contains column name, datatype, range information and description.
 
-Loan amount, interest rate, applicant income
+Example: 
+27.	Column Name: af_valence 
+  a.	Data Type: INT
+  b.	Range: 0 to 1
+  c.	Description: Describes the musical positiveness of the track, where high values represent positive valence (e.g., happy, cheerful) and low values represent negative valence (e.g., sad, depressed).
+28.	Column Name: af_tempo
+  a.	Data Type: INT
+  b.	Range: 0 to 238
+  c.	Description: The tempo of the track in beats per minute (BPM).
+29.	Column Name: af_time_signature
+  a.	Data Type: Categorical
+  b.	Range: 0 to 5
+  c.	Description: The time signature of the track, indicating the number of beats in each bar and the type of note that receives one beat.
 
-Lender ID, loan purpose, and loan type
+To build the K-means and GMM models only numeric features were used in training to ensure computational efficiency.
+Missing rows were deleted or imputed and the dataset was standardized before training.
 
-Applicant demographics and other relevant financial metrics
-
-Only numeric features were used for model training to ensure computational efficiency.
-Missing values were imputed and the dataset was standardized before training.
-
-After preprocessing (cleaning, imputation, and feature selection), we used only **20%** of the total dataset for our analysis.
-
-###  Reason for Sampling
-
-Processing the entire HMDA dataset would have required **significantly higher computational resources, time, and storage** on both AWS and GCP.  
-Since our **primary goal** was to **evaluate and compare the performance of different cloud platforms** (AWS vs GCP) and data abstractions (RDD vs DataFrame) **using the same dataset**, it was **not essential to use the entire dataset**.
-
-To maintain a **balance between performance accuracy and cost efficiency**, we used a **20% representative sample** of the cleaned and preprocessed dataset.  
-This sampling approach allowed us to:
-
--  **Reduce cluster runtime and overall computation cost**  
--  **Lower memory and processing load on Spark workers**  
--  **Preserve a statistically valid distribution** of key features and target variables for analysis  
-
-This ensured that our performance evaluation remained **accurate, scalable, and cost-efficient**, without compromising the reliability of results.
+After preprocessing , we used all of the resulting data our analysis. We noticed that most charting songs tend to repeat in many countries so we had to take care of duplicates.
 
 ---
 
 ## Environment Setup
 
 Follow the steps below to configure and run the project on cloud platforms.
-
-### AWS EMR Setup
-
-1. **Add Bootstrap Script**
-   - Include the `install_lib.sh` file under the **Bootstrap Actions** section during EMR cluster creation.  
-   - This script installs all required Python libraries (NumPy, Pandas, PySpark, psutil, etc.).
-
-2. **Set Up Logging**
-   - Create a `logs/` folder in your **S3 bucket**.  
-   - Add this path under **Cluster Logs** to capture runtime and step logs for monitoring.
-
-3. **Upload and Run Scripts**
-   - Upload the following files to your S3 bucket:  
-     - `df_aws.py`  
-     - `rdd_aws.py`  
-   - Add them as **Steps** during cluster creation or submit them after cluster launch via the EMR console.
-
-4. **Accessing Outputs**
-   - After processing completes, output files will be generated in your S3 bucket:  
-     - `hmda-rdd-aws-output.txt`  
-     - `DF_aws.txt`  
-   - These contain model metrics, system performance, and resource usage reports.
-
----
 
 ### Google Cloud Dataproc Setup
 
