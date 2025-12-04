@@ -7,9 +7,9 @@ This repository contains the full implementation and experiments for our METCS77
 
 **By**: Steveen Vargas and Benjamin Lambright
 
-**Project Purpose**: Provide a curated service for interacial/intercultural when selecting music for their wedding. 
+**Project Purpose**: Provide a curated service for interacial/intercultural couples when selecting music for their wedding. 
 
-**Motivation**: From the DJs contacted, most of them don't provide a service that would be able to dynamically suggest songs for the wedding. Therefore, we created a model where the bridge and the groom would be able to select their songs from data that has been curated and clustered for their wedding needs. 
+**Motivation**: From the DJs contacted, most of them don't provide a service that would be able to dynamically suggest songs for the wedding. Therefore, we created a dynamic system for the groom and the bride to receive songs suggestions from the data that has been curated and clustered for their wedding needs. 
 
 **Method**: Data Preprocessing, Model Creation, song inference and final result.
 
@@ -20,20 +20,25 @@ This repository contains the full implementation and experiments for our METCS77
 
 ## Dataset Sample
 **numpy_array_for_modeling.csv** - This is the sample dataset that was initially used in our local system to test the model.
+
 **numpy_array_for_modeling_with_cathegorical_columns.csv** - This is the sample dataset that was to test innitial results.
+
 **big_data_ready_for_modeling.csv** - This is the final dataset used for modeling our clusters.
 
 ## Files Description
-This repository contains code separate code versions that run on AWS and Google Cloud. 
+This repository contains code separate code versions that run on Google Cloud. 
 
-**Dataframes:** 
-- df_aws.py: Contains the code to run the sample data in AWS EMR
-- df_gcp.py: Contains code to run the sample data in Google Cloud
+**Pre-Processing:** 
+- **preprocessing.ipynb:** Contains the code to pre-process the language detection, remove unwanted columns, drop duplicate rows, implementing correct data types, remove explicit songs, and add language_id column.
+- **large_scale_langid.ipynb**: Contains code to detect most languages in the dataset
 
-**RDDS:**
-- rdd_aws.py: Conttains code to run the sample data in AWS
-- rdd_gcp_implement.py: Contains code to run sammple data in Google Cloud
-
+**Modeling:**
+- **METCS777-term-project-code-Team9-GMM-Implementation.ipynb:** Contains code to run GMM clustering information and separate songs depending on it's features. 
+- **METCS777-term-project-code-Team9-Kmeans-Implementation.ipynb:** Contains code to run K-means clustering information and separate songs depending on it's features.
+  
+**Inference:**
+- add_file: Conttains code to run.... 
+- add_file: Contains code to run... 
 ---
 
 ## Dataset Explanation
