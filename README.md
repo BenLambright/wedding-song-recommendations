@@ -33,8 +33,8 @@ This repository contains code separate code versions that run on Google Cloud.
 - **large_scale_langid.ipynb**: Contains code to detect most languages in the dataset
 
 **Modeling:**
-- **METCS777-term-project-code-Team9-GMM-Implementation.ipynb:** Contains code to run GMM clustering information and separate songs depending on it's features. 
-- **METCS777-term-project-code-Team9-Kmeans-Implementation.ipynb:** Contains code to run K-means clustering information and separate songs depending on it's features.
+- **METCS777-term-project-code-Team9-GMM-Implementation.ipynb:** Contains code to run GMM model and cluster songs depending on its features. 
+- **METCS777-term-project-code-Team9-Kmeans-Implementation.ipynb:** Contains code to run K-means model and cluster songs depending on its features.
   
 **Inference:**
 - add_file: Conttains code to run.... 
@@ -43,7 +43,7 @@ This repository contains code separate code versions that run on Google Cloud.
 
 ## Dataset Explanation
 
-Details of the dataset are available in `Dataset_attributes.pdf`.
+Details of the dataset are available on `Dataset_attributes.pdf`.
 The dataset originates from the Home Mortgage Disclosure Act (HMDA) database and includes:
 
 Loan amount, interest rate, applicant income
