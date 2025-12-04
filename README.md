@@ -96,8 +96,8 @@ You can run the code in **two ways**:
 ```bash
 ### On Google Cloud:
 # Execute on Google Cloud Dataproc
-python3 df_gcp.py
-python3 rdd_gcp_implement.py
+python3 example_file.py
+python3 example_file.py
 ```
 Each script automatically logs execution details, saves the results to the specified bucket, and prints key performance metrics.
 
@@ -125,7 +125,7 @@ Below are the general and actual paths used for running the PySpark scripts on b
 
 
 **For Google Cloud:**  
-- Script: `gs://metcs777termpaper/df_gcp.py`  
+- Script: `gs://metcs777termprojectpaper/df_gcp.py`  
 - Input Dataset: `gs://metcs777termpaper/hmda_2016_nationwide_all-records_labels.csv`  
 - Output Directory: `gs://metcs777termpaper/hmda_test/`
 
