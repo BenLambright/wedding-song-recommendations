@@ -9,7 +9,7 @@ This repository contains the full implementation and experiments for our METCS77
 
 **Project Purpose**: Provide a curated service for interracial/intercultural couples when selecting music for their wedding. 
 
-**Motivation**: In the wedding industry, when you are trying to hire an entertainment company. Some of the DJ’s approach is to send a google form or an excel sheet to your guests where they would obtain the songs that the family would like. They don't provide a service that would be able to dynamically suggest songs for the wedding automatically as the users are entering the songs that they would like to dance to. Therefore, we created a dynamic system for the groom and the bride to obtain a curated list of songs that matches their guest requests and provides similar songs.
+**Motivation**: In the wedding industry, when you are trying to hire an entertainment company. Some of the DJs approach is to send a google forms or an excel sheet to your guests where they would obtain the songs that the guests would like. They don't provide a service that would be able to dynamically suggest songs for the wedding automatically as the users are entering the songs that they would like to dance to. Therefore, we created a dynamic system for the groom and the bride to obtain a curated list of songs that matches their guest requests.
 **Method**: Data Preprocessing, Model Creation, song inference and final result.
 
 **Outcome:** Find the best playlist for bilingual weddings.
