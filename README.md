@@ -35,9 +35,9 @@ This repository contains separate code versions that run on Google Cloud.
 - **METCS777-term-project-code-Team9-GMM-Implementation.ipynb:** Contains code to run GMM model and cluster songs depending on its features. 
 - **METCS777-term-project-code-Team9-Kmeans-Implementation.ipynb:** Contains code to run K-means model and cluster songs depending on its features.
   
-**Inference:**
-- add_file: Conttains code to run.... 
-- add_file: Contains code to run... 
+**Inference (within Modeling directory):**
+- **kmeans_inference.ipynb**: Contains code to run KMeans inferencing. Not only does this pick the top cluster for the user, but it also uses cosine similarity to calculate the closest songs in that cluster to the user's input.
+- **gmm_inference.ipynb**: Contains the code to run the GMM inferencing. 
 ---
 
 ## Dataset Exploration:
@@ -80,7 +80,7 @@ Follow the steps below to configure and run the project on cloud platforms.
 
 4. **Retrieve Outputs**
    - Output files generated:  
-     - `Folder: big_data_clusters`   
+     - `Folder: big_output`   
    - This folder contain the CSV files with cluster song information to perform inference.
 
 ---
@@ -96,10 +96,9 @@ You can run the code in **two ways**:
 ```bash
 ### On Google Cloud:
 # Execute on Google Cloud Dataproc
-python3 example_file.py
-python3 example_file.py
+python3 preprocessing.py -arg1 merged_data.csv -arg2 output_dir
 ```
-Each script automatically logs execution details, saves the results to the specified bucket, and prints key performance metrics.
+Each script automatically logs execution details, saves the results to the specified bucket, and prints key performance metrics. Note that the dataset before preprocessing is not in this repository, because it is 27GB. 
 
 ---
 ### Execution Paths for Cloud Platforms
@@ -112,9 +111,9 @@ Below are the general and actual paths used for running the PySpark scripts on b
 
 
 **For Google Cloud (Modeling):**  
-- `gs://<bucket_name>/<script_filename>.py`  
-- `gs://<bucket_name>/<input_dataset>.csv`  
-- `gs://<bucket_name>/<output_directory>/`
+- `gs://finalprojectmetcs777/preprocessing.py`  
+- `gs://finalprojectmetcs777/data.csv`  
+- `gs://finalprojectmetcs777/output/`
 
 >  Ensure your bucket names, file paths, and IAM permissions are correctly configured before execution.
 
@@ -125,9 +124,9 @@ Below are the general and actual paths used for running the PySpark scripts on b
 
 
 **For Google Cloud:**  
-- Script: `gs://metcs777termprojectpaper/df_gcp.py`  
-- Input Dataset: `gs://metcs777termpaper/hmda_2016_nationwide_all-records_labels.csv`  
-- Output Directory: `gs://metcs777termpaper/hmda_test/`
+- `gs://finalprojectmetcs777/preprocessing.py`  
+- `gs://finalprojectmetcs777/spotify-charts-all-audio-data/merged_data.csv`  
+- `gs://finalprojectmetcs777/big_output/`
 
 
 ---
@@ -135,20 +134,11 @@ Below are the general and actual paths used for running the PySpark scripts on b
 
 The generated output files (`big_data_clusters`) contain:
 
-- cluster_0_big_data.csv
-- cluster_1_big_data.csv
-- cluster_2_big_data.csv
-- cluster_3_big_data.csv
-- cluster_4_big_data.csv
-- cluster_5_big_data.csv
-- cluster_6_big_data.csv
-- cluster_7_big_data.csv
-- cluster_8_big_data.csv
-- cluster_9_big_data.csv
-- cluster_10_big_data.csv
-- cluster_11_big_data.csv
-- cluster_12_big_data.csv
-- cluster_13_big_data.csv
+- part-00000-11ffb57d-69ba-4015-a7ae-97e4686beb96-c000.csv
+- part-00001-11ffb57d-69ba-4015-a7ae-97e4686beb96-c000.csv
+- part-00002-11ffb57d-69ba-4015-a7ae-97e4686beb96-c000.csv
+- part-00003-11ffb57d-69ba-4015-a7ae-97e4686beb96-c000.csv
+- part-00004-11ffb57d-69ba-4015-a7ae-97e4686beb96-c000.csv
 
 
 ## Evaluation
